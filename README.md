@@ -1,4 +1,5 @@
 要实现web服务器自动化部署，搭建lnmp环境，首先要先添加nginx源，然后下载nginx后开启nginx服务。接着下载PHP，启动PHP-fpm服务，配置模版文件。下载数据库并开启数据库，导入SQL文件，添加用户。关闭防火墙，重启nginx服务器。要提前编写PHP文件。一切准备就绪即可运行playbook，以及访问PHP页面。
+项目结构如图![image](https://github.com/ddd216/d/assets/172347189/6419c49f-b5c0-422d-a23c-9fa124369fe8)
 playbook运行成功结果如图![image](https://github.com/ddd216/d/assets/172347189/34830a1f-f696-47c9-92fe-30e05623cd5f)
 页面访问结果如图![image](https://github.com/ddd216/d/assets/172347189/ba1de549-be1c-4d3d-b554-7a6703f6c9e5)
 遇到的困难：（1）多次运用playbook下载并启动mysql失败，因下载压缩包缺少解压步骤导致下载失败，又因安装包密钥失效导致下载失败。只能手动安装并启动mysql，就能成功下载和启动mysql了。
